@@ -1,0 +1,10 @@
+package br.com.dbserver.restaurante.modelo;
+
+public class RestauranteTest {
+
+	@Test
+	public void seRestauranteFoiVotadoUmaVezEleTemUmvoto(){
+		
+	}
+	
+}

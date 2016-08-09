@@ -1,0 +1,8 @@
+package br.com.dbserver.restaurante.bean;
+
+import br.com.dbserver.restaurante.modelo.Usuario;
+
+public class LoginBean {
+
+	private Usuario usuario = new Usuario();
+}

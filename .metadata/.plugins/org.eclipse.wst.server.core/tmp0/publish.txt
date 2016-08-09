@@ -1,0 +1,3 @@
+#Tomcat publish data
+#Mon Aug 08 22:53:52 BRT 2016
+org.eclipse.jst.jee.server\:restaurante-dbserver=/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/wtpwebapps/restaurante-dbserver

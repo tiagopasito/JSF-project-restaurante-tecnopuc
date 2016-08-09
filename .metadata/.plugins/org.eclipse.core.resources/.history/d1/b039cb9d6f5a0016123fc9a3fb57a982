@@ -1,0 +1,28 @@
+package br.com.dbserver.restaurante.dao;
+
+import java.util.List;
+
+import br.com.dbserver.restaurante.modelo.Usuario;
+
+
+public class UsuarioDAO {
+
+	public List<Usuario> getUsuarios(){
+		
+		return new DAO().listaDeUsuarios();
+	}
+
+	public boolean existe(Usuario usuario) {
+		
+		List<Usuario> usuarios = new DAO().listaDeUsuarios();
+		
+		Iterator <Usuario>
+		
+		for(Usuario usuarioAtual  : usuarios){
+			
+		}
+		
+		return false;
+	}
+
+}

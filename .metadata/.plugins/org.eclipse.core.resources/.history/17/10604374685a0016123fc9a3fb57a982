@@ -1,0 +1,45 @@
+package br.com.dbserver.restaurante.bean;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+
+import br.com.dbserver.restaurante.modelo.Usuario;
+
+@ManagedBean
+@ViewScoped
+public class LoginBean {
+
+	private Usuario usuario = new Usuario();
+	
+	public Usuario getUsuario() {
+		return usuario;
+	}
+	
+	public String efetuaLogin() {
+	    System.out.println("Fazendo login do usuário " + this.usuario.getEmail());
+
+	    /*FacesContext context = FacesContext.getCurrentInstance();
+	    
+	    boolean existeUsuario = new UsuarioDao().existe(this.usuario);
+	    
+	    if(existeUsuario) {
+	    	//disponibiliza "usuarioLogado" no SessionMap
+		    context.getExternalContext().getSessionMap().put("usuarioLogado", this.usuario);
+	    	
+	    	String paginaLivro = "livro?faces-redirect=true";		    
+		    return paginaLivro;
+	    }
+	    
+	    //FacesContext soh dura uma requisição. Podemos resolver isso atráves do ExternalContext(), onde possuímos um escopo flash que podemos utilizar o método setKeepMessages(true) para guardar as mensagens por duas requisições.
+	    context.getExternalContext().getFlash().setKeepMessages(true);
+
+	    //adiciona uma mensagem global (mensagem que nao esta associada a um componente)
+	    context.addMessage(null, new FacesMessage("Usuário não encontrado"));		
+	     
+	    //Redirecionar após o envio de formulário é uma boa prática pois limpa os dados da requisição e evita de um outro usuário repetir a requisição ou ver os dados da mesma. Essa boa prática até foi promovida para se tornar um padrão no desenvolvimento web, também chamado de Post / Redirect / Get Pattern.
+	    //O problema com esse pattern é que perdemos as mensagens que foram criadas na primeira requisição Post. Para resolver o problema de perder as mensagens, devemos acessar o externalContext e habilitar o escopo Flash. Esse escopo dura exatamente duas requisições e nos permite manter nossas mensagens.
+	    return "login?faces-redirect=true";*/
+	    
+	    return "teste";
+	}
+}

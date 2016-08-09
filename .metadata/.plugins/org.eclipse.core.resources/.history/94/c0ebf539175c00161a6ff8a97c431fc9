@@ -1,0 +1,48 @@
+package br.com.dbserver.restaurante.modelo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Restaurante {
+
+	private Long id = 0l;
+	private String nome;
+	private int votos = 0;
+	
+	private List<Usuario> usuariosQueVotaram = new ArrayList<Usuario>();
+	
+	public Restaurante() {}
+	
+	public Restaurante(String nome, long id) {
+		this.nome = nome;
+		this.id = id;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;	
+	}	
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public int getVotos() {
+		return votos;
+	}
+
+	public void recebeVoto() {
+		this.votos++;;
+	}
+
+	public List<Usuario> getUsuariosQueVotaram() {
+		return usuariosQueVotaram;
+	}
+
+	public void setUsuariosQueVotaram(List<Usuario> usuario) {
+		this.usuariosQueVotaram.add(usuario);
+	}
+}

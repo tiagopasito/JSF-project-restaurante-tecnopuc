@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<classpath>
+  <source-attachment entry="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/catalina.jar" runtime-id="Apache Tomcat v8.0" source-attachment-path="/home/tiago/.m2/repository/org/apache/tomcat/tomcat-catalina/8.0.30/tomcat-catalina-8.0.30-sources.jar"/>
+  <source-attachment entry="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/jasper-el.jar" runtime-id="Apache Tomcat v8.0" source-attachment-path="/home/tiago/.m2/repository/org/apache/tomcat/tomcat-jasper-el/8.0.30/tomcat-jasper-el-8.0.30-sources.jar"/>
+</classpath>

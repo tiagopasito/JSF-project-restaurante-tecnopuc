@@ -1,0 +1,38 @@
+package br.com.dbserver.restaurante.bean;
+
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+
+import br.com.dbserver.restaurante.dao.DAO;
+import br.com.dbserver.restaurante.modelo.Usuario;
+
+@ManagedBean							
+@ViewScoped
+public class UsuarioBean {
+
+	private Long restauranteId;
+
+	public Long getRestauranteId() {
+		return restauranteId;
+	}
+
+	public void setRestauranteId(Long restauranteId) {
+		this.restauranteId = restauranteId;
+	}
+				
+	public void gravarRestaurante(){
+		System.out.println("Gravando restaurante para este usuario");
+		
+		Usuario usuario;
+	}
+	
+	/**
+	 * Retorna todos usuarios
+	 */
+	public List<Usuario> getRestaurantes(){
+		
+		return new DAO().listaDeUsuarios();
+	}
+}

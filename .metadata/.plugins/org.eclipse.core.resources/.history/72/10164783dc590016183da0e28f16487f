@@ -1,0 +1,31 @@
+package br.com.dbserver_restaurante.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.dbserver_restaurante.modelo.Restaurante;
+
+public class PopulaBanco {
+
+	private final static List<Restaurante> RESTAURANTES = new ArrayList<Restaurante>(); 	
+	
+	static {
+		
+		RESTAURANTES.add(new Restaurante("Panorama", geraId()));
+		RESTAURANTES.add(new Restaurante("Vitoria", geraId()));
+		RESTAURANTES.add(new Restaurante("Palatus", geraId()));
+		RESTAURANTES.add(new Restaurante("Quarentinha", geraId()));
+		RESTAURANTES.add(new Restaurante("Silva", geraId()));
+
+	}
+	
+	public static long geraId() {
+		return RESTAURANTES.size() + 1l;
+	}
+	
+	public List<Restaurante> listaDeRestaurantes(){
+		
+		return RESTAURANTES;	
+	}
+	
+}

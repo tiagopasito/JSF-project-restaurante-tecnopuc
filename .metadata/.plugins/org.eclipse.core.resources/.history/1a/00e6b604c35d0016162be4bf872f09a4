@@ -1,0 +1,47 @@
+package br.com.dbserver.restaurante.modelo;
+
+import static org.junit.Assert.assertEquals;
+
+import java.time.LocalDate;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import br.com.dbserver.restaurante.votacao.Votacao;
+
+public class UsuarioTest {
+
+	Usuario usuario1;
+	Usuario usuario2;
+	
+	LocalDate diaAtual;
+	
+	@Before
+	public void criaUsuarios(){
+		
+		this.diaAtual = LocalDate.now();
+		this.usuario1 = new Usuario("joao@dbserver.com", "joao");
+		
+		String emailAtual = this.usuario1.getEmail();
+	}
+	
+	@Test
+	public void seUsuarioNaoVotouHojePodeVotarHoje(){
+		
+		
+		String emailAtual = usuario.getEmail();
+		
+		for(int i = 0; i <  Votacao.getlistaDeVotos().size(); i++){
+			
+			String email = Votacao.getlistaDeVotos().get(i).getUsuario().getEmail();
+			LocalDate dia = Votacao.getlistaDeVotos().get(i).getDia(); 
+			
+		    assertEquals(false, emailAtual.equals(email) && diaAtual.equals(dia));
+		}
+	} 
+
+	@Test
+	public void seUsuarioJaVotouHojeNaoPodeMaisVotarHoje(){
+
+	
+}

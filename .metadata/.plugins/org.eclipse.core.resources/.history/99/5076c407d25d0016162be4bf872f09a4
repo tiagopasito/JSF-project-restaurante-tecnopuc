@@ -1,0 +1,8 @@
+package br.com.dbserver.restaurante.modelo;
+
+import org.junit.Test;
+
+public class RestauranteTest {
+
+	
+}

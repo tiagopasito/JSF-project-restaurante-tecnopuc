@@ -1,0 +1,8 @@
+2016-08-04 16:13:40,768 [Worker-180] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-catalina/8.0.30/tomcat-catalina-8.0.30-sources.jar
+2016-08-04 16:13:43,930 [Worker-180] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-catalina/8.0.30/tomcat-catalina-8.0.30-sources.jar
+2016-08-04 16:40:13,419 [Worker-209] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-jasper-el/8.0.30/tomcat-jasper-el-8.0.30-sources.jar
+2016-08-04 16:40:14,707 [Worker-209] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-jasper-el/8.0.30/tomcat-jasper-el-8.0.30-sources.jar
+2016-08-04 16:40:39,492 [Worker-208] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/javax.faces/2.2.13/javax.faces-2.2.13-sources.jar
+2016-08-04 16:40:47,365 [Worker-208] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/javax.faces/2.2.13/javax.faces-2.2.13-sources.jar
+2016-08-08 21:23:50,892 [Worker-49] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11-sources.jar
+2016-08-08 21:23:51,743 [Worker-49] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/junit/junit/4.11/junit-4.11-sources.jar

@@ -1,0 +1,29 @@
+package br.com.dbserver.restaurante.bean;
+
+import static org.junit.Assert.assertEquals;
+
+import javax.faces.context.FacesContext;
+
+import org.junit.Test;
+
+import br.com.dbserver.restaurante.dao.RestauranteDAO;
+import br.com.dbserver.restaurante.modelo.Restaurante;
+import br.com.dbserver.restaurante.modelo.Usuario;
+
+public class RestauranteBeanTest {
+
+	private Restaurante restaurante = new Restaurante();
+	
+	@Test
+	public void seUsuarioJaVotouNaoPodeMaisVotar (){
+	
+		Restaurante restaurante = new RestauranteDAO().buscaPorId(this.restaurante.getId());
+		
+		FacesContext context = FacesContext.getCurrentInstance();		
+		
+		Usuario usuarioLogado = (Usuario) context.getExternalContext().getSessionMap().get("usuarioLogado");
+
+		usuarioLogado.votouHoje();
+		
+	}
+}

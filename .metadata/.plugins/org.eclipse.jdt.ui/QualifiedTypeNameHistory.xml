@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="br.com.dbserver_restaurante.dao.RestauranteDAO"/>
+<fullyQualifiedTypeName name="br.com.dbserver_restaurante.dao.PopulaBanco"/>
+<fullyQualifiedTypeName name="br.com.dbserver_restaurante.dao.Banco"/>
+<fullyQualifiedTypeName name="br.com.dbserver_restaurante.modelo.Restaurante"/>
+<fullyQualifiedTypeName name="br.com.dbserver_restaurante.dao.DAO"/>
+<fullyQualifiedTypeName name="br.com.dbserver_restaurante.modelo.Usuario"/>
+<fullyQualifiedTypeName name="javax.faces.event.PhaseEvent"/>
+<fullyQualifiedTypeName name="javax.faces.event.PhaseListener"/>
+<fullyQualifiedTypeName name="br.com.dbserver.restaurante.modelo.Usuario"/>
+<fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
+<fullyQualifiedTypeName name="javax.faces.bean.ViewScoped"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="org.apache.jasper.tagplugins.jstl.core.ForEach"/>
+<fullyQualifiedTypeName name="javax.faces.context.FacesContext"/>
+<fullyQualifiedTypeName name="br.com.dbserver.restaurante.dao.RestauranteDAO"/>
+<fullyQualifiedTypeName name="br.com.dbserver.restaurante.dao.UsuarioDAO"/>
+<fullyQualifiedTypeName name="javax.faces.validator.ValidatorException"/>
+<fullyQualifiedTypeName name="javax.faces.application.FacesMessage"/>
+<fullyQualifiedTypeName name="javax.faces.component.UIComponent"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="java.lang.reflect.InvocationTargetException"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="br.com.dbserver.restaurante.modelo.Restaurante"/>
+<fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+<fullyQualifiedTypeName name="java.time.LocalTime"/>
+<fullyQualifiedTypeName name="java.time.ZoneId"/>
+<fullyQualifiedTypeName name="br.com.dbserver.restaurante.controller.Votacao"/>
+<fullyQualifiedTypeName name="br.com.dbserver.restaurante.votacao.Votacao"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+</qualifiedTypeNameHistroy>

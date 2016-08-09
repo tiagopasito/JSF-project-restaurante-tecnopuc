@@ -1,0 +1,11 @@
+package br.com.dbserver.restaurante.bean;
+
+import org.junit.Test;
+
+public class RestauranteBeanTest {
+
+	@Test
+	public void seUsuarioJaVotouNaoPodeMaisVotar (){
+		
+	}
+}

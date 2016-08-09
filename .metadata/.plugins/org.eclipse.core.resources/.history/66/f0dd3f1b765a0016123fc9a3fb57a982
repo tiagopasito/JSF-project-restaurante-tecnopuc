@@ -1,0 +1,49 @@
+package br.com.dbserver.restaurante.dao;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.apache.jasper.tagplugins.jstl.core.ForEach;
+
+import br.com.dbserver.restaurante.modelo.Usuario;
+
+
+public class UsuarioDAO {
+
+	public List<Usuario> getUsuarios(){
+		
+		return new DAO().listaDeUsuarios();
+	}
+
+	public boolean existe(Usuario usuario) {
+				
+		List<Usuario> usuarios = new DAO().listaDeUsuarios();
+		
+		for(Usuario usuarioAtual : usuarios){
+			
+		}
+		
+		//Iterator <Usuario> iterador = usuarios.iterator();
+		
+		//while(iterador.hasNext()) {
+			/*System.out.println("usuario:  " + usuario.getEmail() + " e " + usuario.getSenha());
+			System.out.println("iterador: " + iterador.toString());*/
+			
+			
+			/*if(usuario.equals(iterador.next())){			
+				System.out.println("SAO IGUAIS!!!!!!!!!!!!!!!!!!");
+				return true;
+			}*/		
+			
+			/*if(iterador.equals(usuario)){
+				System.out.println("SAO IGUAIS!!!!!!!!!!!!!!!!!!");
+				return true;				
+			}*/
+			
+		//}
+		
+		
+		return false;
+	}
+
+}

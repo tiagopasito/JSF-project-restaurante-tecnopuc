@@ -1,0 +1,13 @@
+package br.com.dbserver.restaurante.bean;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class RestauranteBeanTest {
+
+	@Test
+	public void seUsuarioJaVotouNaoPodeMaisVotar (){
+		
+	}
+}

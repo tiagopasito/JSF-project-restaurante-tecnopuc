@@ -1,0 +1,12 @@
+package br.com.dbserver.restaurante.modelo;
+
+import java.time.LocalDate;
+
+import br.com.dbserver.restaurante.votacao.Votacao;
+
+
+public class Usuario {
+
+
+
+}

@@ -1,0 +1,7 @@
+<classpath>
+  <container id="restaurante-dbserver!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao3/restaurante-dbserver/WebContent/WEB-INF/lib/javax.faces-2.2.13.jar">
+      <source-attachment-path>/home/tiago/.m2/repository/org/glassfish/javax.faces/2.2.13/javax.faces-2.2.13-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

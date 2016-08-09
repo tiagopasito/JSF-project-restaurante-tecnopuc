@@ -1,0 +1,25 @@
+1470261962391	Encapsulate field 'nome'
+1470263222724	Delete element
+1470263240843	Delete element
+1470263584097	Rename type 'Restaurante'
+1470265992925	Copy file
+1470270864875	Delete element
+1470271431161	Rename type 'PopulaBanco'
+1470272867568	Rename type 'Banco'
+1470274401229	Encapsulate field 'restauranteId'
+1470275014043	Encapsulate field 'restauranteId'
+1470314010802	Delete element
+1470314411722	Delete element
+1470315347767	Rename package 'br.com.dbserver_restaurante.bean'
+1470315368941	Rename package 'br.com.dbserver_restaurante.modelo'
+1470315379884	Rename package 'br.com.dbserver_restaurante.dao'
+1470316587268	Delete element
+1470351535760	Delete element
+1470355195764	Encapsulate field 'restauranteId'
+1470355273778	Encapsulate field 'restaurante'
+1470355361994	Encapsulate field 'numeroDeVotos'
+1470414994580	Encapsulate field 'votos'
+1470421317562	Copy file
+1470430681850	Encapsulate field 'votouHoje'
+1470516476521	Encapsulate field 'usuariosQueVotaram'
+1470526330090	Encapsulate field 'votos'

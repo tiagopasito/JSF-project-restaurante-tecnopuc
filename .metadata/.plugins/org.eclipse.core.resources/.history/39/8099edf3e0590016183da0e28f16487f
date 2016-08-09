@@ -1,0 +1,17 @@
+package br.com.dbserver_restaurante.bean;
+
+import java.util.List;
+
+import br.com.dbserver_restaurante.dao.DAO;
+import br.com.dbserver_restaurante.modelo.Restaurante;
+
+public class UsuarioBean {
+
+	/**
+	 * Retorna todos usuarios
+	 */
+	public List<Restaurante> getRestaurantes(){
+		
+		return new DAO().listaDeRestaurantes();
+	}
+}

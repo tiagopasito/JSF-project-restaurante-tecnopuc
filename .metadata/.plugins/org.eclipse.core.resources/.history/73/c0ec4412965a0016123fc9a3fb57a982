@@ -1,0 +1,55 @@
+package br.com.dbserver.restaurante.bean;
+
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+import javax.faces.context.FacesContext;
+
+import br.com.dbserver.restaurante.dao.DAO;
+import br.com.dbserver.restaurante.modelo.Restaurante;
+import br.com.dbserver.restaurante.modelo.Usuario;
+
+@ManagedBean							
+@ViewScoped
+public class UsuarioBean {
+
+	
+	
+	private Long restauranteId;
+
+	public Long getRestauranteId() {
+		return restauranteId;
+	}
+
+	public void setRestauranteId(Long restauranteId) {
+		this.restauranteId = restauranteId;
+	}
+	
+	/**
+	 * Retorna todos usuarios
+	 */
+	public List<Usuario> getUsuarios(){
+		
+		return new DAO().listaDeUsuarios();
+	}
+				
+	public void gravarRestaurante(){
+		System.out.println("Gravando restaurante para este usuario");
+		
+		FacesContext context = FacesContext.getCurrentInstance();
+		
+		Usuario usuarioLogado = (Usuario) context.getExternalContext().getSessionMap().get("usuarioLogado");
+		
+		escolheRestaurante(usuarioLogado, getRestauranteId());
+	}
+	
+	
+	
+	private void escolheRestaurante(Usuario usuario, Restaurante restaurante) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

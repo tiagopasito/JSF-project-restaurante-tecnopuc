@@ -1,0 +1,87 @@
+import java.time.LocalDate;
+
+import br.com.dbserver.restaurante.votacao.Votacao;
+
+
+	private String email;
+	private String senha;
+	
+	public UsuarioTest() {}
+	
+	public UsuarioTest(String email, String senha) {
+		this.email = email;
+		this.senha = senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	
+	/**
+	 * Usuario vota em restaurante 
+	 */
+	public void vota(Restaurante restaurante){
+				
+		restaurante.recebeVoto();
+		
+		Usuario usuario = this;
+		
+		LocalDate data = LocalDate.now(); 				
+		
+		Votacao voto = new Votacao(usuario, data, restaurante);
+		
+		Votacao.getlistaDeVotos().add(voto);
+	}
+		
+	/**
+	 * Se usuarios tem email e senha iguais, usuarios sao iguais
+	 */
+	@Override
+	public boolean equals(Object obj){
+
+		if(obj == null){
+			return false;
+		}
+		
+		boolean emailsIguais = this.getEmail().equals( ((Usuario)obj).getEmail() );
+		boolean senhasIguais = this.getSenha().equals( ((Usuario)obj).getSenha() );
+		
+		if(emailsIguais && senhasIguais){
+			return true;	
+		}
+		
+		return false;
+	}
+
+	/**
+	 * Verifica se esse usuario ja votou hoje
+	 */
+	public boolean votouHoje() {
+		
+		LocalDate diaAtual = LocalDate.now();
+		
+		String emailAtual = this.getEmail();
+		
+		for(int i = 0; i <  Votacao.getlistaDeVotos().size(); i++){
+			
+			String email = Votacao.getlistaDeVotos().get(i).getUsuario().getEmail();
+			LocalDate dia = Votacao.getlistaDeVotos().get(i).getDia(); 
+			
+			if(emailAtual.equals(email) && diaAtual.equals(dia)){
+				return true;
+			}
+		}
+		return false;
+	}

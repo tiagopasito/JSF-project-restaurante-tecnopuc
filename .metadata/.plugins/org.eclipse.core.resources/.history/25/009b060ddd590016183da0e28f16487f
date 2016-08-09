@@ -1,0 +1,44 @@
+package br.com.dbserver_restaurante.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.dbserver_restaurante.modelo.Restaurante;
+import br.com.dbserver_restaurante.modelo.Usuario;
+
+public class Banco {
+
+	private final static List<Restaurante> RESTAURANTES = new ArrayList<Restaurante>(); 	
+	private final static List<Usuario> USUARIOS = new ArrayList<Usuario>();
+	
+	static {
+		
+		RESTAURANTES.add(new Restaurante("Panorama", geraId()));
+		RESTAURANTES.add(new Restaurante("Vitoria", geraId()));
+		RESTAURANTES.add(new Restaurante("Palatus", geraId()));
+		RESTAURANTES.add(new Restaurante("Quarentinha", geraId()));
+		RESTAURANTES.add(new Restaurante("Silva", geraId()));
+
+	}
+	
+	static {
+		USUARIOS.add(new Usuario("joao@dbserver.com", "joao"));
+		USUARIOS.add(new Usuario("jose@dbserver.com", "jose"));
+		USUARIOS.add(new Usuario("maria@dbserver.com", "maria"));
+	}
+	
+	public static long geraId() {
+		return RESTAURANTES.size() + 1l;
+	}
+	
+	public List<Restaurante> listaDeRestaurantes(){
+		
+		return RESTAURANTES;	
+	}
+	
+	public List<Usuario> listaDeUsuarios(){
+		
+		return USUARIOS;	
+	}	
+	
+}

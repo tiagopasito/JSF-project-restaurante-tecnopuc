@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/catalina-storeconfig.jar"/>
+  <path value="/restaurante-dbserver/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="restaurante-dbserver"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/servlet-api.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/tomcat-i18n-es.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/tomcat-dbcp.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao3/restaurante-dbserver/WebContent/WEB-INF/lib/javax.faces-2.2.13.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.13.jar/META-INF/html_basic.tld" project="restaurante-dbserver"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.13.jar/META-INF/jsf_core.tld" project="restaurante-dbserver"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.13.jar/META-INF/mojarra_ext.taglib.xml" project="restaurante-dbserver"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.13.jar/META-INF/mojarra_ext.tld" project="restaurante-dbserver"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/tomcat-util.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/ecj-4.4.2.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/tomcat-coyote.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/jasper.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/catalina-ha.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/annotations-api.jar"/>
+  <path value="/opt/eclipse/plugins/org.junit_4.11.0.v201303080030/junit.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/catalina-ant.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/tomcat-api.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/jasper-el.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/tomcat-jni.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/catalina-tribes.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/catalina.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/el-api.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/websocket-api.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/jsp-api.jar"/>
+  <path value="/opt/eclipse/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/tomcat-i18n-ja.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/tomcat-websocket.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/tomcat-jdbc.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/tomcat-util-scan.jar"/>
+  <path value="/var/www/html/java/javaServerFaces/projetos/projetoDBServer/versao1/apache-tomcat-8.0.30/lib/tomcat-i18n-fr.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification">
+   <linked-resource declaration="true" name="%1;%2;%3;%4;" path="%0"/>
+  </core>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="29" name="%5" offset="1075" path="%6"/>
+   <linked-el length="29" name="%5" offset="715" path="%6"/>
+   <linked-el length="27" name="%7" offset="1346" path="%6"/>
+   <linked-el length="29" name="%7" offset="1075" path="%6"/>
+   <linked-el length="29" name="%7" offset="715" path="%6"/>
+   <linked-el length="24" name="%7" offset="1009" path="%8"/>
+   <linked-el length="26" name="%9" offset="778" path="%8"/>
+   <linked-el length="27" name="%10" offset="1346" path="%6"/>
+   <linked-el length="29" name="%10" offset="1075" path="%6"/>
+   <linked-el length="29" name="%10" offset="715" path="%6"/>
+   <linked-el length="24" name="%10" offset="1009" path="%8"/>
+   <linked-el length="40" name="%11" offset="909" path="%8"/>
+   <linked-el length="39" name="%12" offset="1136" path="%13"/>
+   <linked-el length="36" name="%12" offset="736" path="%13"/>
+   <linked-el length="22" name="%12" offset="879" path="%13"/>
+   <linked-el length="19" name="%12" offset="911" path="%13"/>
+   <linked-el length="42" name="%12" offset="1010" path="%13"/>
+   <linked-el length="22" name="%12" offset="810" path="%14"/>
+   <linked-el length="23" name="%12" offset="954" path="%14"/>
+   <linked-el length="34" name="%12" offset="817" path="%13"/>
+   <linked-el length="34" name="%12" offset="628" path="%14"/>
+   <linked-el length="36" name="%15" offset="736" path="%13"/>
+   <linked-el length="22" name="%15" offset="879" path="%13"/>
+   <linked-el length="19" name="%15" offset="911" path="%13"/>
+   <linked-el length="22" name="%15" offset="810" path="%14"/>
+   <linked-el length="23" name="%15" offset="954" path="%14"/>
+   <linked-el length="39" name="%16" offset="1136" path="%13"/>
+   <linked-el length="36" name="%16" offset="736" path="%13"/>
+   <linked-el length="42" name="%16" offset="1010" path="%13"/>
+   <linked-el length="34" name="%16" offset="817" path="%13"/>
+   <linked-el length="34" name="%16" offset="628" path="%14"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="loginBean" value="%7"/>
+  <alias path="/restaurante-dbserver/WebContent/restaurante.xhtml" value="%13"/>
+  <alias path="/restaurante-dbserver/WebContent/login.xhtml" value="%6"/>
+  <alias
+   path="/restaurante-dbserver/src/br/com/dbserver/restaurante/bean/LoginBean.java" value="%10"/>
+  <alias path="br.com.dbserver.restaurante.util.LogPhaseListener" value="%2"/>
+  <alias path="/restaurante-dbserver/WebContent/_template.xhtml" value="%8"/>
+  <alias path="/restaurante-dbserver/WebContent/resultado.xhtml" value="%14"/>
+  <alias path="br.com.dbserver.restaurante.util.Autorizador" value="%4"/>
+  <alias
+   path="/restaurante-dbserver/WebContent/WEB-INF/faces-config.xml" value="%0"/>
+  <alias
+   path="/restaurante-dbserver/src/br/com/dbserver/restaurante/modelo/Usuario.java" value="%5"/>
+  <alias
+   path="/restaurante-dbserver/src/br/com/dbserver/restaurante/util/Autorizador.java" value="%1"/>
+  <alias path="usuarioLogado" value="%9"/>
+  <alias path="sessionScope" value="%11"/>
+  <alias
+   path="/restaurante-dbserver/src/br/com/dbserver/restaurante/util/LogPhaseListener.java" value="%3"/>
+  <alias path="restauranteBean" value="%12"/>
+  <alias
+   path="/restaurante-dbserver/src/br/com/dbserver/restaurante/modelo/Restaurante.java" value="%15"/>
+  <alias
+   path="/restaurante-dbserver/src/br/com/dbserver/restaurante/bean/RestauranteBean.java" value="%16"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://xmlns.jcp.org/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://xmlns.jcp.org/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+ </uris>
+</kb-project>

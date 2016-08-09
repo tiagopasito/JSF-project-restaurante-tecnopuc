@@ -1,0 +1,24 @@
+package br.com.dbserver_restaurante.bean;
+
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+
+import br.com.dbserver_restaurante.dao.DAO;
+import br.com.dbserver_restaurante.modelo.Usuario;
+
+@ManagedBean							
+@ViewScoped
+public class UsuarioBean {
+
+	private Integer restauranteId;
+	
+	/**
+	 * Retorna todos usuarios
+	 */
+	public List<Usuario> getRestaurantes(){
+		
+		return new DAO().listaDeUsuarios();
+	}
+}

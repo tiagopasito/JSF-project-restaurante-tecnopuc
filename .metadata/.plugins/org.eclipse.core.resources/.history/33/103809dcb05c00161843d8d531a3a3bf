@@ -1,0 +1,79 @@
+package br.com.dbserver.restaurante.bean;
+
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+import javax.faces.context.FacesContext;
+
+import br.com.dbserver.restaurante.controller.Votacao;
+import br.com.dbserver.restaurante.dao.RestauranteDAO;
+import br.com.dbserver.restaurante.modelo.Restaurante;
+import br.com.dbserver.restaurante.modelo.Usuario;
+
+@ManagedBean							
+@ViewScoped
+public class RestauranteBean {
+
+	private Restaurante restaurante = new Restaurante();
+	
+	/**
+	 * Retorna todos restaurantes
+	 */
+	public List<Restaurante> getRestaurantes(){
+		
+		return new RestauranteDAO().getRestaurantes();
+	}
+	
+	public String gravarRestaurante(){				
+		
+		//buscar restaurante por seu ID
+		Restaurante restaurante = new RestauranteDAO().buscaPorId(this.restaurante.getId());
+		
+		System.out.println("Gravando restaurante " + restaurante.getNome());
+		
+		FacesContext context = FacesContext.getCurrentInstance();		
+		
+		Usuario usuarioLogado = (Usuario) context.getExternalContext().getSessionMap().get("usuarioLogado");
+		
+	    ZoneId zone = ZoneId.of("Brazil/East");   
+		
+	    LocalTime now = LocalTime.now(zone);
+	    
+	    LocalTime horarioLimiteDeVoto = LocalTime.of(11, 59);
+
+	    Restaurante restauranteVencedor = null;
+	    
+		if(now.isAfter(horarioLimiteDeVoto)){
+			//11:59 usuario nao pode mais votar, deve ver qual restaurante eh o vencedor
+					
+			restauranteVencedor = Votacao.verificaVencedor();
+		}
+		else{
+			//antes das 11:59, usuario pode votar
+			
+			//se usuario nao votou hoje, pode votar		
+			if(!usuarioLogado.votouHoje()){
+				usuarioLogado.vota(restaurante);
+			}
+			else {
+				System.out.println("Usuario " + usuarioLogado.getEmail() + " ja votou hoje");
+			}
+		}
+			
+		System.out.println("Restaurante :" + restaurante.getNome() + ", tem " + restaurante.getVotos() + " votos");
+		
+		String paginaResultado = "resultado?faces-redirect=true";		    
+	    return paginaResultado;
+	}
+
+	public Restaurante getRestaurante() {
+		return restaurante;
+	}
+
+	public void setRestaurante(Restaurante restaurante) {
+		this.restaurante = restaurante;
+	}
+}

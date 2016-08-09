@@ -1,0 +1,25 @@
+package br.com.dbserver.restaurante.dao;
+
+import java.util.List;
+
+import br.com.dbserver.restaurante.modelo.Restaurante;
+
+public class RestauranteDAO {
+	
+	public List<Restaurante> getRestaurantes(){
+		
+		return new DAO().listaDeRestaurantes();
+	}
+
+	public Restaurante buscaPorId(Long id) {
+
+		for(Restaurante restaurante : getRestaurantes()){
+			
+			if(restaurante.getId().equals(id)){
+				return restaurante;
+			}
+		}
+		
+		return null;
+	}
+}

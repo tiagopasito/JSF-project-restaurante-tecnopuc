@@ -1,0 +1,14 @@
+package br.com.dbserver_restaurante.dao;
+
+import java.util.List;
+
+import br.com.dbserver_restaurante.modelo.Restaurante;
+
+
+public class RestauranteDAO {
+	
+	public List<Restaurante> getRestaurantes(){
+		
+		return new Banco().listaDeRestaurantes();
+	}
+}

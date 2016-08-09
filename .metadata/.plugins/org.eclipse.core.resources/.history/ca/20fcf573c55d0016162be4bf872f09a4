@@ -1,0 +1,77 @@
+package br.com.dbserver.restaurante.modelo;
+
+import static org.junit.Assert.assertEquals;
+
+import java.time.LocalDate;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import br.com.dbserver.restaurante.votacao.Votacao;
+
+public class UsuarioTest {
+
+	Usuario usuario1;
+	Usuario usuario2;
+	Usuario usuario3;
+	
+	Restaurante restaurante;
+	
+	LocalDate diaAtual;
+	
+	@Before
+	public void criaUsuarios(){
+		
+		this.diaAtual = LocalDate.now();
+		
+		this.usuario1 = new Usuario("joao@dbserver.com", "joao");
+		this.usuario2 = new Usuario("jose@dbserver.com", "jose");
+		this.usuario3 = new Usuario("maria@dbserver.com", "maria");
+	}
+	
+	@Test
+	public void seNaoHouveVotoListaDeVotosEstaVazia(){
+		
+		assertEquals(0, Votacao.getlistaDeVotos().size());
+	}
+	
+	@Test
+	public void seHouveUmVotoListaDeVotosTemUmVoto(){
+		
+		this.restaurante = new Restaurante("Panorama", 1l);
+		
+		usuario1.vota(restaurante);
+		
+		assertEquals(1, Votacao.getlistaDeVotos().size());
+	}
+
+	@Test
+	public void seHouveTresVotosListaDeVotosTemTresVotos(){
+		
+		this.restaurante = new Restaurante("Panorama", 1l);
+		
+		usuario1.vota(restaurante);
+		
+		assertEquals(1, Votacao.getlistaDeVotos().size());
+	}
+	
+	@Test
+	public void seUsuarioNaoVotouHojePodeVotarHoje(){
+		
+		
+		String emailAtual = this.usuario1.getEmail();
+		
+		for(int i = 0; i <  Votacao.getlistaDeVotos().size(); i++){
+			
+			String email = Votacao.getlistaDeVotos().get(i).getUsuario().getEmail();
+			LocalDate dia = Votacao.getlistaDeVotos().get(i).getDia(); 
+			
+		    assertEquals(false, emailAtual.equals(email) && diaAtual.equals(dia));
+		}
+	} 
+
+	//@Test
+	//public void seUsuarioJaVotouHojeNaoPodeMaisVotarHoje(){
+
+	
+}
